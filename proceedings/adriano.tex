@@ -1,0 +1,28 @@
+\chapter{Using statistical learning techniques to determine Cantonese lexical tones from the acoustic and visual components of speech}\label{ch:adriano}
+\chapterauthor[1]{João Vitor Possamai de Menezes}
+\chapterauthor[1]{Hani Camille Yehia}
+\chapterauthor[1]{Adriano Vilela Barbosa}
+\begin{affils}
+\chapteraffil[1]{Universidade Federal de Minas Gerais}
+\end{affils}
+
+\noindent 
+This mini-course presents an introduction to the use of statistical learning techniques to speech
+processing problems. More specifically, we show how classification techniques can be used to
+predict lexical tones in Cantonese from the associated measurements of both the acoustic and the
+visual (to a lesser degree) components of speech. The acoustic and visual data we use were recorded
+during a speech production experiment where a native speaker of Cantonese produced a set of
+words spanning the full range of Cantonese tones. The visual data consists of 3D trajectories of
+markers on the subject’s face and head recorded with an Optotrak. The acoustic component is
+represented by F0 trajectories extracted from the speech acoustics. The idea is to use the F0 and
+marker trajectories as input vectors to train classifiers to predict the lexical tones. However, these
+trajectories cannot be used directly because they have different durations for different tokens
+(utterances), whereas all input vectors to the classifiers must have the same dimension. In order to
+make all input vectors the same length, regardless of the duration of the utterances, all trajectories
+(both F0 and markers) are approximated by polynomials of a given order and represented by the
+corresponding coefficients. The polynomial coefficients are then used as input vectors to train
+different classification models (LDA, SVM, K-nearest neighbors, etc). The performance of the
+models is estimated by means of k-fold cross validation. Although the statistical learning techniques
+we present are applied to a specific problem (estimating Cantonese lexical tones from the acoustical
+and visual components of speech), they are general and can be equally applied to a wide range of
+problems. All procedures presented in the mini-course are developed in the R language.
