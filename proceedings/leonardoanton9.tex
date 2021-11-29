@@ -18,7 +18,7 @@ North American English were recorded reading the same text in English. Data
 were manually segmented into vowel units (V), consonant (C), vowel-vowel (VV),
 sentences (S) and higher prosodic units - chunks (CH) in PRAAT \citep{boersma_praat},
 and the parameters were automatically by means of a script.
-Data were statistically treated via R \citep{r2021}%(R CORE TEAM, 2021) 
+Data were statistically treated via R \citep{r2021} %(R CORE TEAM, 2021) 
 through the implementation of mixed-effects regression models. Results placed Brazilian
 Portuguese and English-L1 in different rhythmic spaces, as predicted by the
 literature; in the durational dimension, the metrics positioned the English-L2
@@ -40,9 +40,13 @@ greater emphasis on segmental aspects rather than prosodic ones \citep{li2014,th
 This tendency is also reflected in L2
 acquisition models \citep{flege2021,best2007}, 
 which emphasize segmental aspects, providing little support to the understanding of L2 prosodic
-development. There is also evidence that rhythm can influence the communication
-process in a global way, affecting degrees of perceived foreign accent and
-intelligibility \citep{silva2020}.
+development. 
+%There is also evidence that rhythm can influence the communication
+%process in a global way, affecting degrees of perceived foreign accent and
+%intelligibility \citep{silva2020}.
+Among prosodic features, rhythm is the least explored \citep{cumming2010,gut2012,whitworth_speech_2002},
+despite evidence that demonstrates it can influence the communication process in a global way, 
+affecting degrees of perceived foreign accent and intelligibility \citep{silva2020}.
 
 The scarcity of studies on the acquisition of L2 rhythm may be related to the
 difficulty of establishing the physical reality of such construct. There are at
@@ -67,25 +71,25 @@ of consonantal intervals (ΔC) and the percentual of the total duration of the
 utterance composed of vowel intervals (\%V). Those metrics were able to
 spatially discriminate languages considered syllable-timed (French, Spanish,
 Italian and Catalan), stress-timed (English, Polish and Dutch) and mora-timed
-languages (Japanese) \citep{ladefoged1975} on a plane with ΔC and \%V on each axis,
-as can be seen in Figure 1, reproduced from the original paper:
+languages (Japanese) \citep{ladefoged1975} on a plane with ΔC and \%V on each axis.%,
+%as can be seen in Figure \ref{leo-fig01}, reproduced from the original paper:
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{imgs/leo-fig01.png}
-\caption{Distribution of languages over the (\%V, ∆C) plane. Error bars
-represent 1 standard error. Source: \citet[p.~273]{ramus1999}.}
-\label{leo-fig01}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.9\linewidth]{imgs/leo-fig01.png}
+%\caption{Distribution of languages over the (\%V, ∆C) plane. Error bars
+%represent 1 standard error. Source: \citet[p.~273]{ramus1999}.}
+%\label{leo-fig01}
+%\end{figure}
 
 The present study follows a third trend on research on linguistic rhythm, which
-define it as a function of the distribution of prominent elements in the
+defines it as a function of the distribution of prominent elements in the
 acoustic signal, which involves several acoustic dimensions – duration,
 fundamental frequency (f0) and intensity, and may be influenced by the native
 language of the speaker \citep{cumming2010,fuchs2016,silva2020}.
 Thus, this study was guided by the following questions: (i) how do the metrics
 and acoustic parameters place North American English-L1, Brazilian English-L2,
-and the Brazilian Portuguese (BP)-L1 in the rhythmic space? (ii) What is the
+and Brazilian Portuguese (BP)-L1 in the rhythmic space? (ii) What is the
 influence of the rhythm of BP-L1 on the development of English-L2 of learners?
 (iii) What is the effect of explicit pronunciation teaching on learners'
 English-L2 rhythm development? The following hypotheses were raised: (i) PB-L1,
@@ -118,7 +122,7 @@ with a sampling rate of 44.1 kHz, and saved in wav format.
 Data were manually segmented into vowel units (V), consonant (C), vowel-vowel
 (VV), that is, the interval between the acoustic onset of a vowel and the onset
 of the adjacent one, sentences (S) and higher prosodic units - chunks (CH) in
-PRAAT \citep{boersma2020}, and the script Metrics \& Acoustics Extractor
+PRAAT \citep{boersma_praat}, and the script Metrics \& Acoustics Extractor
 \citep{silva2020} was used to extract the parameters. Following \citet{silva2020},
 the term metric(s) is used in this research to refer
 to the duration-based parameters, and the term acoustic parameter(s) refers to
@@ -127,10 +131,10 @@ summary of the metrics and acoustic parameters analyzed in this study and the
 types of segments they compute:
 
 %%TABLE
-\begin{table*}
+\begin{table}
 \caption{Rhythm metrics and prosodic-acoustic parameters analyzed in this study}\label{leo-tab01}
-\small
-\begin{tabular}{@{}p{3cm}lp{3cm}l@{}}
+\begin{scriptsize}
+\begin{tabular}{@{}p{3.1cm}p{1.6cm}p{2cm}p{1.5cm}@{}}
 \toprule
 \multicolumn{2}{c}{METRICS\protect\footnotemark[1]} & \multicolumn{2}{c}{ACOUSTIC PAREMETERS}\\
 Parameters & Segment of application & Parameters & Segment of application \\
@@ -150,7 +154,8 @@ Variability index (VI)\protect\footnotemark[6] & V,C (V ou C), VV & Standard dev
    &  & Mean duration of pauses (μdur-\#) & S, CH \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{scriptsize}
+\end{table}
 \footnotetext[1]{See \citet{fuchs2016} for a comprehensive account of rhythmic metrics.}
 \footnotetext[2]{Standard deviation of the segment duration divided by the mean, multiplied by 100.}
 \footnotetext[3]{Mean of the differences between successive segments.}
@@ -159,7 +164,7 @@ Variability index (VI)\protect\footnotemark[6] & V,C (V ou C), VV & Standard dev
 \footnotetext[6]{Mean of the differences between successive segments where the duration of each segment is normalised through division by the mean of all segments’ durations.}
 \footnotetext[7]{Mean of the differences between successive segments where the durations are normalised by z-transformation.}
 
-Data were then statistically treated via R \citep{r20210}%(R CORE TEAM, 2021) 
+Data were then statistically treated via R \citep{r2021} %(R CORE TEAM, 2021) 
 through the implementation of mixed-effects regression models, adopting language and
 semester as predictor variables, and rhythmic metrics and acoustic parameters
 as response variables.
@@ -175,7 +180,7 @@ measures (the dependent variables) can be visually inspected.
 \subsection{Metrics}
 Twenty out of the thirty employed metrics reached statistical significance for
 at least two of the (inter) languages. One example of the mixed-regression
-models that were implemented via R can be seen in table 2, which were adjusted
+models that were implemented via R can be seen in Table \ref{leo-tab02}, which were adjusted
 for the standard deviation of the duration of consonantal intervals (deltaC)
 and the percentual of vocalic intervals (\%V).
 
@@ -184,6 +189,7 @@ and the percentual of vocalic intervals (\%V).
 linear mixed-effect regression models adjusted for ΔC and \%V. models: deltaC ~
 Lang + (1|Chunk) + (1|Speaker) and percV ~ Lang + (1|Chunk) + (1 /
 Speaker).}\label{leo-tab02}
+\begin{small}
 \begin{tabular}{@{}lllllll@{}}
 \toprule
   & ΔC & \%V & & & & \\
@@ -195,6 +201,7 @@ Lang {[}Eng-L2 (1){]} & 58.71 & 44.13~--~73.30 & \textbf{\textless0.001} & -11.9
 Lang {[}Eng-L2 (4){]} & 37.61 & 23.02~--~52.19 & \textbf{\textless0.001}& -9.28 & -11.47~--~-7.09 & \textbf{\textless0.001} \\
 \bottomrule
 \end{tabular}
+\end{small}
 \end{table*}
 
 
@@ -214,7 +221,7 @@ Gre = Greek, Spa = Spanish, UI = Italian, Kor = Korean. Source: Teixeira and Lim
 \end{figure}
 
 
-As can be seen in figure \ref{leo-fig02} (a), English-L1 presented greater standard deviation
+As can be seen in Figure \ref{leo-fig02} (a), English-L1 presented greater standard deviation
 of consonantal intervals duration (ΔCEng-L1 = 68.41) compared to BP (ΔCBP =
 46.48); and BP presented greater proportion of the utterance composed of vowel
 intervals (\%VBP = 48.56) compared to English-L1 (\%VEng-L1 = 38,88). The data
@@ -243,7 +250,7 @@ German from other studies, which are considered languages with more
 stress-timing tendency. 
 
 The hierarchy of values for VarcoV-VarcoC and ΔC-\%V illustrates the dominant
-positioning pattern for the significant metrics, as can be seen in table 3:
+positioning pattern for the significant metrics, as can be seen in Table \ref{leo-tab03}:
 ([+stress-timed] English-L2 (1) > English-L2 (4) > English-L1 > BP [+
 syllable-timed]), except for \%V and RR, whose higher values indicate a
 tendency towards syllable-timing.
@@ -252,6 +259,7 @@ tendency towards syllable-timing.
 \caption{Absolute means for the statistically significant metrics and standard
 deviation (between parentheses) for BP, English-L1, English-L2 (1),
 English-L2(1) and English-L2(4).\\$^\ast$ S stands for the phonetic syllable, which is the  vowel-vowel (VV) unit.}\label{leo-tab03}
+\begin{small}
 \begin{tabular}{@{}lllll@{}}
 \toprule
 Metric & BP & English-L1 & English-L2(1) & English-L2(4) \\
@@ -278,6 +286,7 @@ VI-S & 0.516 (0.120) & 0.606 (0.136) & 0.615 (0.160) & 0.538(0.126) \\
 YARD-VC & 0.717 (0.150) & 0.695 (0.133) & 0.869 (0.113) & 0.848(0.123) \\
 \bottomrule
 \end{tabular}
+\end{small}
 \end{table*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -365,7 +374,7 @@ definition of interlanguage that presents itself as a relatively independent
 system of L1 and L2 \citep{li2014}, and with the non-linearity of the L2
 development process \citep{lima2019}.
 
-At the durational level, the dominant distribution pattern ([+ stress-timed]
+At the durational level, the dominant distribution pattern was ([+ stress-timed]
 English-L2 (1) > English-L2 (4) > English-L1 > BP [+ syllable-timed]), with
 English-L2(1) assuming the highest means among the four corpora, and
 English-L2(4) getting closer values to English-L1. One possible explanation for
@@ -391,7 +400,7 @@ overall improvement in marking syllable stress, respectively.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 The metrics and acoustic parameters confirmed the first hypothesis that North
-American English-L1, the Brazilian English-L2, and the BP-L1 are rhythmically
+American English-L1, Brazilian English-L2, and BP-L1 are rhythmically
 different systems. We confirmed the hypothesis that the data of English-L2 (1)
 would be more dissimilar in relation to English-L1 compared to the data of
 English-L2 (4), but orthogonal patterns of rhythmic development seem to coexist
