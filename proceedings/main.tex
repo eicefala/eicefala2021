@@ -356,9 +356,16 @@
 \newenvironment{abstract}{\section*{Abstract}\begin{small}}{\end{small}}
 
 %%%% change figure counting 
-\usepackage{chngcntr}
-\counterwithout{section}{chapter}
-\counterwithin{chapter}{part}
+%\usepackage{chngcntr}
+%\counterwithout{section}{chapter}
+%\counterwithin{chapter}{part}
+\let\oldchapter\chapter
+\def\chapter{%
+  \setcounter{footnote}{0}%
+  \setcounter{figure}{0}%
+  \setcounter{table}{0}%
+  \oldchapter
+}
 
 \usepackage{multirow}
 \usepackage{longtable}
