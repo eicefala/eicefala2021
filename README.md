@@ -1,4 +1,5 @@
 # EICEFALA2021
+[![DOI](https://zenodo.org/badge/421534988.svg)](https://zenodo.org/badge/latestdoi/421534988)  
 *7th EICEFALA International Meeting on Speech Sciences*
 
 
